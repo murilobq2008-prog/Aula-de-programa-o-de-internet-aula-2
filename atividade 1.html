@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        /*Regra CSS*/
+        p{border: 3px dotted red;}
+        *{
+            border: 0.5px solid blue;
+        }
+
+        p{
+            font-size: 12px ;
+            color: rgba(42, 31, 187, 0.5)  ;
+            background-color: rgba(56, 126, 172, 0.5);
+            
+        }
+         h1{
+            font-size: 14mm; 
+        }
+        #ItemID {font-family: "Lucida", "Lucida Sans Regular", Lucida "Grande", "Lucida Sans Unicode", Gevena, Verdana, sans-serif;}
+        .item{
+            background-color: rgba(42, 31, 187, 0.5);
+        }
+        div span{
+            font-style: italic;
+        }
+        div>mark{
+            background-color: gray;
+        } 
+        li:hover{color: coral;}
+        p:last-child{
+            font-size: 2m;
+        }
+   
+   
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <p style="color: black">Css é uma linguagem declarativa auxiliar a documentos html para estilização de definição de comportamento. O css pode
+        ser declarado de três formas distintas.</p>
+
+        <ol>
+
+            <li class="item"> Na tag style, definida no cabeçario do HTML</li>
+            <li class="item">Em um documento externo por meio da tag link</li>
+            <li class="item">InLine no proprio elemento HTML</li>
+            
+        </ol>
+        <div>
+            <p>CSS possui diversas formas de selecionar em quais elementos html uma regra será aplicada.</p>
+            <span>Seletores:</span>
+            <ul>
+                <li>seletor por elemento</li>
+                <li>seletor universal;</li>
+                <li id="ItemID"> Seletor por identificar único: li id="item" style #item </li>
+                <Li>Class ou categoria</Li>
+                <li>Seletor por descendente <span>Guri </span> <mark>Marcado</mark></li>
+            </ul>
+            <mark>Marcado</mark>
+        </div>
+        
+</body>
+</html>
