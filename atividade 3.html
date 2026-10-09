@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GIT</h1>
+    <p>O git é um sistema de controle de versão distribuido</p>
+    <img src="https://i.redd.it/js2drc3bfkx61.jpg" alt="Descrição da imagem">
+
+
+    <h2>Comandos do git</h2>
+    <ul>
+        <li>git init : inicializa um repositorio git </li>
+        <li>git status</li>
+        <li>git add nome-arquivo.txt : adiciona no stage</li>
+        <li>git commit -m "comentario" : cria um commit no seu repositorio local</li>
+        <li>git log: exibe os commits da branch atual do repositorio local</li>
+        <li>git switch branch: muda de branch</li>
+        <li>git switch -c cria-nova-branch : muda de branch</li>
+        <li>git diff: exibe a diferença do commit apontado por HEAD e worktree</li>
+
+
+    </ul>
+<nav>
+     <a href="https://google.com"target="_blank">link</a>
+
+
+</nav>
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempore placeat aspernatur, totam corporis porro fuga <del>nesciunt commodi</del> esse exercitationem pariatur adipisci aliquam eveniet quia eligendi obcaecati asperiores ipsum ab!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis eaque <mark>necessitatibus</mark> dignissimos nostrum nesciunt vel error, dicta quae a voluptatum exercitationem dolorum ratione pariatur illo maiores voluptas expedita veniam voluptates?</p>
+  </p>
+  <p>
+     10<sub>2</sub> <br>
+     6.23x10<sub>23</sub> <br>
+     2267<sub>25</sub>
+  </p>
+    <span>Churrasco</span>
+    <span>Churrasco</span> <br>
+    <input type="churrasco">
+    <p>Churrasco</p>
+    <p> Churrasco </p>
+  </div>
+    <ul>
+
+
+   <li>Carne</li>
+   <li>Batata</li>
+   <li>Pão de alho</li>
+
+
+</ul>
+
+
+<ol type = "i" start="10">
+    <li>Carne</li>
+    <li>Batata</li>
+    <li>Pão de alho</li>
+</ol>
+
+
+<dl>
+    <li>Carne</li>
+    <li>Batata</li>
+    <li>Pão de alho</li>
+</dl>
+
+
+<dl>
+    <dt>café</dt>
+    <dd>Vida!</dd>
+</dl>
+
+
+<HR></HR>
+<table>
+    <caption>Churrasco</caption>
+   
+
+
+    <thead>
+        <th>Indice</th>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Valor</th>
+
+
+    </thead>
+
+
+   
+
+
+
+
+    <tr>
+        <td>Item 1</td>
+        <td> Carne</td>
+        <td> 4 kg</td>
+        <td> 160,00</td>
+   
+    </tr>
+    <tr>
+        <td>Item 2</td>
+        <td>Pão de alho</td>
+        <td>3</td>
+        <td>7,00</td>,
+
+
+
+
+    </tr>
+    <tr>
+        <td>Item 3</td>
+        <td>Linguiça</td>
+        <td>7</td>
+        <td>20,00</td>,
+    </tr>
+
+
+    <tfoot>
+        <tr>
+        <td colspan = "3"> Total:</td>
+        <td>187,00</td>
+    </tr>
+    </tfoot>
+   
+</table>
+<p> Obs: Na casa do Murilo</p>
+
+
+
+
+    <form action="https://google.com/search">
+
+
+        <label for="busca">termos de busca</label>
+
+
+        <input id="busca" name="q" type="text" placeholder="pesquisar">
+
+
+        <input type="color">
+
+
+        <input type="submit" value="pesquisar">
+
+
+ 
+
+
+   
+    </form>
+
+
+<canvas id="canvas" height="1000px" width="600px"></canvas>
+
+
+<script>
+ //declarar variavel em js
+ desenhando = false;
+ const canvas = document.getElementById("canvas");
+ const ctx= canvas.getContext("2d");
+
+
+ ctx.begInPath();
+ ctx.moveTo(40,30 );
+ ctx.lineTo(1000,1000);
+ ctx.closePath();
+ ctx.stroke();
+
+
+ canvas.addEventListenner("mousedown",(e)=>(
+    desenhando=true;
+    ctx.moveTo(e.offsetX, e.offsetY)
+ ))
+ canvas.addEventListenner("mouseup",(e)=>(
+    desenhando=false;
+
+
+))
+
+
+ canvas.addEventListener("mousemove",(e)=>(console.log(e)
+
+
+ctx.motveTo(e.offsetX, e.offsetY);
+ctx.lineTo(e.offsetX, e.offsetY);
+ctx.stroke();
+
+
+) )
+ 
+
+
+
+
+</script>
+
+
+
+
+
+
+   
+</body>
+</html>
+
