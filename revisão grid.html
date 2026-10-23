@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{border: 1px solid black;}
+      .main {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 100px 200px 100px;
+
+            grid-template-areas:
+                "header header header"
+                "nav   seção  aside"
+                "footer footer footer";
+      }
+        header {
+            grid-area: header;
+        }
+
+        section {
+            grid-area: seção;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        menu {
+            grid-area: nav;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+</style>
+<body>
+    <div class="main">
+        <header>header</header>
+        <nav>menu</nav>
+        <section>seção</section>
+        <aside>aside</aside>
+        <footer>rodapé</footer>
+        
+        
+    </div>
+</body>
+</html>
