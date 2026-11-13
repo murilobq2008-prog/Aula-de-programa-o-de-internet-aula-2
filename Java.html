@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="b">
+        <button id="a">Não aperte esse botão</button>
+
+    </div>
+    <script>
+        let a = document.querySelector("#a");
+        let div = document.querySelector("#b");
+        a.addEventListener("click", ()=>{
+
+            let node = document.createElement("img");
+            node.src = "https://i.redd.it/pvaw2o1n2csd1.jpg";
+            div.appendChild(node);
+
+        })
+        setTimeout (()=> console.log ("a"),0)
+        console.log("b");
+        Promise.resolve().then(()=>console.log("c"));
+        console.log("d");
+    </script>
+    
+</body>
+</html>
